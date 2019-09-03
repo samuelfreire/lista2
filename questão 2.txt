@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main(void) {
+  float n1, n2, n3, soma, soma2, soma3, soma4, r, fim;
+  int i;
+  for(i=1;;i++){
+    printf("Oi tudo bom? Meu nome é Samuel e sou estudante de eng.elétrica, fiz esse programa para te ajudar a calcular a sua média na UFRN, levamos em conta a prova de recuperação.\n");
+    printf("digite a primeira nota:");
+    scanf("%f", &n1);
+    printf("digite a segunda nota:");
+    scanf("%f", &n2);
+    printf("digite a terceira nota:");
+    scanf("%f", &n3);
+    if(n1<3){
+      printf("digite a nota da reposição:");
+      scanf("%f", &r);
+      soma2 = (n2 + n3 + r)/3;
+      if(soma2>=5){
+        printf("sua nota foi %3.1f e você foi aprovado\n", soma2);
+        break;
+      }
+      else{
+        printf("sua nota foi %3.1f e você foi reprovado\n", soma2);
+        break;
+      }
+    }
+      if(n2<3){
+      printf("digite a nota da reposição:");
+      scanf("%f", &r);
+      soma3 = (n1 + n3 + r)/3;
+      if(soma3>=5){
+        printf("sua nota foi %3.1f e você foi aprovado\n", soma3);
+        break;
+      }
+      else{
+        printf("sua nota foi %3.1f e você foi reprovado\n", soma3);
+        break;
+      }
+  }
+    if(n3<3){
+      printf("digite a nota da reposição:");
+      scanf("%f", &r);
+      soma4 = (n2 + n1 + r)/3;
+      if(soma4>=5){
+      printf("sua nota foi %3.1f e você foi aprovado\n", soma4);
+      break;
+      }
+      else{
+        printf("sua nota foi %3.1f e você foi reprovado\n", soma4);
+        break;
+    }
+    }
+    if(n1>=3&&n2>=3&&n3>=3){
+      soma=(n1+n2+n3)/3;
+      if(soma>=5){
+        printf("sua nota foi %3.1f e você foi aprovado\n", soma);
+        break;
+      }
+      else{
+        printf("sua nota foi %3.1f e você foi reprovado\n", soma);
+        break;
+      }
+    }
+  }
+  return 0;
+  }
