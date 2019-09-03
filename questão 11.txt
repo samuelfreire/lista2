@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+float lat, zn, cb;
+printf("Quanto de latão?");
+scanf("%f", &lat);
+cb = 0.7*lat;
+zn = 0.3*lat;
+printf("Precisa de %4.2f de cobre\n", cb);
+printf("Precisa de %4.2f de zinco\n", zn);
+return 0;
+}
