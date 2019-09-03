@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void){
+  int a1, a2, a3, soma;
+  printf("Digite o primeiro número:");
+  scanf("%d", &a1);
+  printf("Agora digite o segundo e o terceiro:");
+  scanf("%d", &a2);
+  scanf("%d", &a3);
+  soma = a2 + a3;
+  if(a1>soma){
+    printf("Sim é maior minino");
+  }
+  else{
+    printf("É não abestado");
+  }
+  return 0;
+}
