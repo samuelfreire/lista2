@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  int spd, motora, lascouse;
+  printf("Qual a velocidade permitida?");
+  scanf("%d", &spd);
+  printf("A quanto estava o motorista?");
+  scanf("%d", &motora);
+lascouse=motora-spd;
+  if(lascouse<=10){
+    printf("Vai pagar 50R$");
+  }
+  if (lascouse>=11&&lascouse<=30){
+    printf("Vai pagar 100R$");
+  }
+  if(lascouse>30){
+    printf("Vai pagar 200R$");
+  }
+  
+    return 0;
+}
