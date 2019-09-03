@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  int n, suc, i;
+for(i=0;;i++){
+  printf("Digite o número desejado:");
+  scanf("%d", &n);
+  if(n>0||n<0){
+  suc = n + 1;
+printf("O sucessor é: %d, caso queira encerrar digite 0\n", suc);
+  }
+if(n==0){
+  printf("o sucessor é 1, programa encerrado");
+  break;
+}
+}
+
+
+  return 0;
+}
