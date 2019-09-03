@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+float preço = 0, imp = 0, dis = 0, preçof = 0;
+printf("Digite o preço de fábrica:");
+scanf("%f", &preço);
+imp = (preço*0.45);
+dis = (preço*0.12);
+preçof = preço + imp + dis;
+printf("O preço desse veículo é:%4.2f", preçof);
+printf("O imposto sobre o veículo é:%4.2f", imp);
+printf("O lucro do distruibuidor é:%4.2f", dis);
+return 0;
+}
