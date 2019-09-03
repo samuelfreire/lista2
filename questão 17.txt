@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, d, a2, b2, c2, d2, soma;
+  printf("Digite o primeiro número:");
+  scanf("%d", &a);
+  printf("Digite o segundo número:");
+  scanf("%d", &b);
+  printf("Digite o terceiro número:");
+  scanf("%d", &c);
+  printf("Digite o quarto número");
+  scanf("%d", &d);
+  if(a%2==0){
+    a2=a;
+  }
+else{
+  a2=0;
+}
+if(b%2==0){
+  b2=b;
+}
+else{
+  b2=0;
+}
+if(c%2==0){
+  c2=c;
+}
+else{
+  c2=0;
+}
+if(d%2==0){
+  d2=d;
+}
+else{
+  d2=0;
+}
+soma=a2+b2+c2+d2;
+printf("A soma dos pares é: %d", soma);
+  return 0;
+}
