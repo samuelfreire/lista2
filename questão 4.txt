@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, q, r;
+  printf("digite o primeiro número:");
+  scanf("%d", &a);
+  printf("Digite o segundo número:");
+  scanf("%d", &b);
+  q = a/b;
+  r = a%b;
+  printf("O quociente é %d e o resto é %d\n", q, r);
+  return 0;
+}
