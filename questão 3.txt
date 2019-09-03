@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+  int  anos, cigarros;
+  float preçocarteira, totalgasto;
+  printf("Oi tudo bom? Meu nome é Samuel e vou te ajudar a calcular o total gasto com cigarros em sua vida.\n");
+  printf("Há quantos anos você fuma?");
+  scanf("%d", &anos);
+  printf("Em média, quantos cigarros você fuma por dia?");
+  scanf("%d", &cigarros);
+  printf("Qual o preço da carteira que você costuma comprar?");
+  scanf("%f", &preçocarteira);
+  totalgasto = ((cigarros*365*anos*preçocarteira)/20);
+  printf("%4.2f gastos com cigarro, com isso você poderia fazer muitas outras coisas além de estragar o pulmão, beijos", totalgasto);
+return 0;
+}
