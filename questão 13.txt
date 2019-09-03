@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void) {
+  int a=1,b=1,c=1,i;
+  for(i=1;i<=1;i++){
+    printf("digite o primeiro:");
+    scanf("%d", &a);
+    printf("digite o segundo:");
+    scanf("%d", &b);
+    printf("digite o terceiro:");
+    scanf("%d", &c);
+    if(a>b&&c){
+      printf("%d é maior", a);
+      break;
+    }
+    if(b>c&&a){
+      printf("%d é maior", b);
+      break;
+    }
+    if(c>a&&b){
+      printf("%d é maior", c);
+      break;
+    }
+    else{
+      printf("são iguais");
+      break;
+    }
+  }
+
+  return 0;
+}
