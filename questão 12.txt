@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  float a, b; 
+  float resultado;
+  printf("Digite o primeiro número:");
+  scanf("%f", &a);
+  printf("Agora o segundo número bb:");
+  scanf("%f", &b);
+  resultado = a/b;
+  if(b==0){
+    printf("divisão por 0");
+  }
+  else{
+    printf("O resultado é %f", resultado);
+  }
+  return 0;
+}
